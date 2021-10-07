@@ -1,5 +1,5 @@
 
-name := "LogFileGenerator"
+name := "MapReduceLogDigest"
 
 version := "0.1"
 
@@ -32,5 +32,5 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % scalacticVersion % Test,
   "org.scalatest" %% "scalatest-featurespec" % scalacticVersion % Test,
   "com.typesafe" % "config" % typesafeConfigVersion,
-  "com.github.mifmif" % "generex" % generexVersion,
+  "com.github.mifmif" % "generex" % generexVersion
 )
