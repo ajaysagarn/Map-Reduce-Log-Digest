@@ -28,6 +28,7 @@ libraryDependencies ++= Seq(
   "commons-io" % "commons-io" % apacheCommonIOVersion,
   "org.apache.hadoop" % "hadoop-mapreduce-client-core" % hadoopVersion,
   "org.apache.hadoop" % "hadoop-common" % hadoopVersion,
+  "org.apache.hadoop" % "hadoop-client" % hadoopVersion,
   "org.scalactic" %% "scalactic" % scalacticVersion,
   "org.scalatest" %% "scalatest" % scalacticVersion % Test,
   "org.scalatest" %% "scalatest-featurespec" % scalacticVersion % Test,
