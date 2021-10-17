@@ -1,7 +1,6 @@
 package Job2
 
 import HelperUtils.{CreateLogger, MapReduceUtils, Parameters}
-import MapReduce.IntervalMapper
 import org.apache.hadoop.io.{IntWritable, Text}
 import org.apache.hadoop.mapreduce.Mapper
 
