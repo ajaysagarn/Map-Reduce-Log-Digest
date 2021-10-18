@@ -61,7 +61,7 @@ In the reducer phase of the job, we create aggregations over each time interval 
 finally, for each time interval we make 4 context writes, one for each type of log message (WARN, DEBUG, ERROR, INFO).
 
 #### Results : [Map Reduce Job 1 Results](../results/Job1.csv)
-
+<hr/>
 
 ### Map Reduce Job - 2 :
 "Compute time intervals sorted in the descending order that contained most
@@ -118,6 +118,7 @@ Example reducer_2 output:-
     <12:45 - 12:50 , 3>
 
 #### Results : [Map Reduce Job 2 Results](../results/Job2.csv)
+<hr/>
 
 ### Map Reduce Job - 3 :
 For each message type, produce the number of the generated log messages
@@ -144,6 +145,7 @@ Example mapper output:-
 In the reducer phase we aggregate the results by summing up the list of values for each log type to get the final distribution of the number of messages for each log type
 
 #### Results : [Map Reduce Job 3 Results](../results/Job3.csv)
+<hr/>
 
 ### Map Reduce Job - 4 :
 Produce the number of characters in each log message for each log message type
