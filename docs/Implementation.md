@@ -6,10 +6,10 @@ about the logs. Here we use several parameters specified in the ```application.c
 Util classes have been written in the ```MapReduceUtils``` class that performs most of the generic operations that are being used in most of the mappers and
 reducers.
 
-####Testing: 
+#### Testing: 
 Unit test cases are written to test several methods in the util class to make sure they produce the desired results.
 
-###Time Intervals
+### Time Intervals
 
 Inorder to group log messages into respective time intervals we first specify a global constant in the ```application.conf``` file which specifies the length of each interval.
 
