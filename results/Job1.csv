@@ -1,3 +1,4 @@
+TimeInterval, Log Type, Number of Logs, Number of matched logs
 11:35 - 11:40,WARN,129,66
 11:35 - 11:40,DEBUG,1402,679
 11:35 - 11:40,ERROR,2544,1234
