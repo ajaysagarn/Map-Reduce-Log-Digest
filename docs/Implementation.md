@@ -9,7 +9,7 @@ reducers.
 #### Testing: 
 Unit test cases are written to test several methods in the util class to make sure they produce the desired results.
 
-### Time Intervals
+#### Time Intervals
 
 Inorder to group log messages into respective time intervals we first specify a global constant in the ```application.conf``` file which specifies the length of each interval.
 
