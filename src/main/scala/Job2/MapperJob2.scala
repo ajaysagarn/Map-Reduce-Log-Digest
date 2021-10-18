@@ -12,7 +12,7 @@ class MapperJob2 extends Mapper[Object, Text, Text, IntWritable] {
   val logCount = new IntWritable()
 
   val one = new IntWritable(1)
-  val word = new Text()
+  val interval = new Text()
 
   override def map(key: Object, value: Text, context: Mapper[Object, Text, Text, IntWritable]#Context): Unit = {
     val tokens = new StringTokenizer(value.toString,"[] ")
@@ -23,9 +23,12 @@ class MapperJob2 extends Mapper[Object, Text, Text, IntWritable] {
       val intervalString = MapReduceUtils.getIntervalString(timestamp.get)
       if(intervalString.nonEmpty){
         val logLevel = MapReduceUtils.getLogLevel(value.toString)
+       // check of the lof type is of the tpye "ERROR" and also check of the log message matches with the regex pattern specified
         if(logLevel == "ERROR" && MapReduceUtils.doesContainPattern(value.toString,Parameters.generatingPattern.r)){
-          word.set(intervalString.get)
-          context.write(word,one)
+          interval.set(intervalString.get)
+          //Set the interval string as the key and 1 as the output value of the mapper
+          logger.info("Map reduce job2-1 writing key = {} value = {}", interval, one)
+          context.write(interval,one)
         }
       }
     }

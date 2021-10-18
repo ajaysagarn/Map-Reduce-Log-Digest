@@ -11,6 +11,8 @@ import java.lang
 class ReducerJob2_2 extends Reducer[IntWritable, Text, Text, IntWritable] {
   val logger = CreateLogger(classOf[ReducerJob2_2])
   override def reduce(key: IntWritable, values: lang.Iterable[Text], context: Reducer[IntWritable, Text, Text, IntWritable]#Context): Unit = {
+    // switch the key and the value pairs we get from the mapper
+    logger.info("Producing reducer 2 output key = {}", key)
     context.write(values.iterator().next(), key)
   }
 }
