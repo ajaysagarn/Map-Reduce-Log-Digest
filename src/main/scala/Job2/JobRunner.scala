@@ -55,6 +55,7 @@ object JobRunner {
     job2.setReducerClass(classOf[ReducerJob2_2])
 
     job2.setSortComparatorClass(classOf[CustomComparator])
+    job2.setNumReduceTasks(1)
 
     // Set the Key and Value types of the output
     job2.setMapOutputKeyClass(classOf[IntWritable])
