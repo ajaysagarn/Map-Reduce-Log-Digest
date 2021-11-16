@@ -1,9 +1,4 @@
-# Homework 2
-
-### Ajay Sagar Nandimandalam
-### UIN: 659867916
-
-### The goal of this homework is for students to gain experience with solving a distributed computational problem using cloud computing technologies. The main textbook group (option 1) will design and implement an instance of the map/reduce computational model whereas the alternative textbook group (option 2) will use the CORBA model. You can check your textbook option in the corresponding column of the gradebook on the Blackboard.
+An Implementation of the Map Reduce model to digest logs files generated using a log generator and produce metrics based in the distribution of logs. This project makes use of the HDFS and the map reduce framework to perform the required operations on the Log Files. 
 
 ## Running this project
 
