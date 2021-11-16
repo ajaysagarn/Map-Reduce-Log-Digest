@@ -1,4 +1,4 @@
-An Implementation of the Map Reduce model to digest logs files generated using a log generator and produce metrics based in the distribution of logs. This project makes use of the HDFS and the map reduce framework to perform the required operations on the Log Files. 
+## An Implementation of the Map Reduce model to digest logs files generated using a log generator and produce metrics based in the distribution of logs. This project makes use of the HDFS and the map reduce framework to perform the required operations on the Log Files. 
 
 ## Running this project
 
