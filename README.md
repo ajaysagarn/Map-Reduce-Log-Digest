@@ -30,6 +30,5 @@ Here we execute our map reduce jobs on the AWS EMR Custer
 5. Finally click on create cluster. This will start the resource provisioning process and execute the steps one after the other.
 6. The output files can be viewed in the s3 path specified in the arguments passed for each of the jobs. 
 
-[Video Presentation](https://youtu.be/-i4laQinWJM)
 
 [Implementation Details](./docs/Implementation.md)
